@@ -1,0 +1,102 @@
+.workflow-container {
+  width: 300px; 
+  padding: 20px;
+  position: relative;
+}
+
+.bg-primary {
+  background-color: #5e4b8c !important;
+}
+
+.text-primary {
+  color: #5e4b8c !important;
+}
+
+.btn-primary {
+  background-color: #5e4b8c !important;
+  border: none;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.toggle-button {
+  width: 15px;
+  height: 15px;
+  background: white;
+  font-size: 14px;
+  margin-right: 10px;
+  z-index: 5;
+  position: absolute;
+  left: -7px;
+  top: 5px;
+}
+
+.dot-indicator {
+  width: 0.1px;
+  height: 0.1px;
+  background-color: white;
+  border: 0.1px solid gray;
+  border-radius: 50%;
+  position: absolute;
+
+  left: -25px; 
+  transition: background-color 0.3s ease;
+}
+
+.dot-indicator.expanded {
+  background-color: #0ea5e9; 
+}
+
+.custom-card-header {
+  background-color: #6f42c1; /* Purple color */
+  color: white; /* Text color */
+  cursor: pointer;
+}
+
+.workflow-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 14px;
+  width: 2px;
+  z-index: 1;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    #bbb,
+    #bbb 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+.section-card {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.card-header {
+  background-color: #f7f7f7;
+}
+
+.card-body {
+  padding-left: 30px; 
+}
+
+.accordion {
+  border-left: dashed 1px #000;
+}
+
+.card-body-tab{
+  border: 1px solid #c8c2d9;
+  background-color: #ebe6f6; 
+}
